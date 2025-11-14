@@ -61,16 +61,18 @@ aiagent/
 │
 ├── README.md               # Project documentation
 ├── main.py                 # Core agent loop (Gemini orchestration)
-├── config.py               # Model config / runtime parameters
-├── call_function.py        # Function-call dispatching
+├── config.py               # Model config
+├── call_function.py        # Function-call module for AI Agent
 │
 ├── functions/              # Toolbox for agent actions
-│   ├── file_tools.py       # File reading/writing helpers
-│   └── python_runner.py    # Safe Python execution logic
+│   ├── get_file_content.py # Inspect contents of a file
+│   ├── run_python_file.py  # Execute a py file using python3 interpreter and function params
+│   ├── write_file.py       # Create or write to an existing file
+│   └── get_files_info.py   # Safe Python execution logic
 │
-├── calculator/             # Additional utilities / example code
+├── calculator/             # Example implementation for a calculator app
 │
-├── tests.py                # Test coverage for tools and logic
+├── tests.py                # Metatest coverage for tools and logic
 │
 ├── pyproject.toml          # Build system metadata
 ├── pyvenv.cfg              # Virtual environment configuration
