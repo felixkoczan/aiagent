@@ -6,15 +6,15 @@ The agent uses Gemini’s **function-calling** system to safely inspect files, r
 
 ---
 
-## 🚀 Features
+## Features
 
-### ✔ Intelligent Coding Assistance
+### Intelligent Coding Assistance
 - Responds to natural language coding requests  
 - Writes, edits, and refactors Python code  
 - Generates new files or updates existing ones  
 - Can run Python scripts and return their output  
 
-### ✔ Secure Tool Access
+### Secure Tool Access
 The agent exposes four controlled tools:
 
 | Tool                | Description                                 |
@@ -24,11 +24,11 @@ The agent exposes four controlled tools:
 | `write_file`       | Writes & overwrites files within the working directory |
 | `run_python_file`  | Executes Python scripts in a sandbox         |
 
-### ✔ Sandboxed Execution
+### Sandboxed Execution
 To prevent security issues, the agent is **restricted to the current working directory**.  
 It cannot access arbitrary system files or navigate upward in the filesystem.
 
-### ✔ Multi-Step Reasoning
+### Multi-Step Reasoning
 The agent can:
 - Read a file  
 - Analyze it  
@@ -39,7 +39,7 @@ The agent can:
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The agent follows a strict message loop:
 
@@ -55,7 +55,8 @@ This architecture allows Gemini to behave like a lightweight, local ReAct agent.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+```
 aiagent/
 │
 ├── README.md               # Project documentation
@@ -76,10 +77,10 @@ aiagent/
 ├── bin/                    # Virtual environment scripts
 ├── lib/                    # Virtual environment libraries
 ├── include/                # Virtual environment headers
-
+```
 ---
 
-## 🧩 Example Usage
+## Example Usage
 
 **User Prompt:**
 
